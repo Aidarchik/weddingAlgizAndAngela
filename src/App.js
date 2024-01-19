@@ -1,12 +1,12 @@
 import homeWat from './assets/home-wat.png';
 import invite from './assets/invite.png';
 import algiz from './assets/algiz.png';
-import algizBlack from './assets/algiz_black.png';
+// import algizBlack from './assets/algiz_black.png';
 import and from './assets/and.png';
 import angela from './assets/angela.png';
-import angelaBlack from './assets/angela_black.png';
+// import angelaBlack from './assets/angela_black.png';
 import './App.css';
-import Tmp from './components/tmp'
+// import Tmp from './components/tmp'
 
 function App() {
   return (
