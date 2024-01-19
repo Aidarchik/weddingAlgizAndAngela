@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage:{
+        'hero-pattern':"url('./assets/sderty6u789.png')",
+      }
+    },
   },
   plugins: [],
 }
