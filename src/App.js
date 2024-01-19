@@ -7,8 +7,8 @@ function App() {
     <div className="App">
       <div className='h-screen mx-auto bg-hero-pattern bg-fixed bg-cover bg-center'>
         <div className='container mx-auto px-2'>
-        <img src={homeWat} className='relative opacity-25 top-[calc(-6vw)]' alt=""></img>
-          <Tmp className=''/>
+        <img src={homeWat} className='relative top-[calc(-6vw)]' alt=""></img>
+          <Tmp className='opacity-25'/>
         </div>
       </div>
     </div>
