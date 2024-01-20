@@ -6,8 +6,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage:{
-        'hero-pattern':"url('./assets/sderty6u789.png')",
-        'home-wat':"url('./assets/316-3164413_home-wat.png')",
+        'hero-pattern':"url('./assets/background.png')",
       }
     },
   },
