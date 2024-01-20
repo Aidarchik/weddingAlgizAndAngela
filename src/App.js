@@ -19,13 +19,33 @@ function App() {
             className="relative top-[calc(-3.7vw)]"
             alt=""
           ></img>
-          <div>
-            <img src={invite} className="" alt=""></img>
-            <img src={algiz} className="" alt=""></img>
-            <img src={and} className="w-20" alt=""></img>
-            <img src={angela} className="" alt=""></img>
+          <div className="relative border-2 h-[40rem] border-gray-950">
+            <img
+              src={invite}
+              className="absolute top-0 left-[calc(40%)] w-[15vw] h-[10vw]"
+              alt=""
+            ></img>
+            <img
+              src={algiz}
+              className="absolute top-[15vw] left-[calc(30%)] w-[17vw] h-[10vw]"
+              alt=""
+            ></img>
+            <img
+              src={and}
+              className="absolute top-[17vw] left-[calc(40%)] opacity-20 w-[15vw] h-[15vw]"
+              alt=""
+            ></img>
+            <img
+              src={angela}
+              className="absolute top-[25vw] left-[calc(50%)] w-[19vw] h-[9vw]"
+              alt=""
+            ></img>
+            <img
+              src={egg}
+              className="absolute top-[40vw] left-[calc(40%)] w-[15vw] h-[15vw]"
+              alt=""
+            ></img>
           </div>
-          <img src={egg} className="" alt=""></img>
         </div>
       </div>
     </div>
