@@ -12,40 +12,38 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <div className="h-full mx-auto bg-hero-pattern bg-fixed bg-cover bg-center">
-        <div className="container mx-auto px-2 w-[70vw] h-full">
+      <div className="mx-auto bg-hero-pattern bg-fixed bg-cover bg-center">
+        <div className=" border-2 h-[720px] border-gray-950">
           <img
             src={greenBranch}
-            className="relative top-[calc(-3.7vw)]"
+            className="absolute top-[-24px] w-[439px] left-[calc(50%-160px-59px)]"
             alt=""
           ></img>
-          <div className="relative border-2 h-[40rem] border-gray-950">
-            <img
-              src={invite}
-              className="absolute top-0 left-[calc(40%)] w-[15vw] h-[10vw]"
-              alt=""
-            ></img>
-            <img
-              src={algiz}
-              className="absolute top-[15vw] left-[calc(30%)] w-[17vw] h-[10vw]"
-              alt=""
-            ></img>
-            <img
-              src={and}
-              className="absolute top-[17vw] left-[calc(40%)] opacity-20 w-[15vw] h-[15vw]"
-              alt=""
-            ></img>
-            <img
-              src={angela}
-              className="absolute top-[25vw] left-[calc(50%)] w-[19vw] h-[9vw]"
-              alt=""
-            ></img>
-            <img
-              src={egg}
-              className="absolute top-[40vw] left-[calc(40%)] w-[15vw] h-[15vw]"
-              alt=""
-            ></img>
-          </div>
+          <img
+            src={invite}
+            className="absolute top-28 sm:left-[calc(50%-160px+84px)] left-[calc(50%-600px+531px)] w-50 h-20 contrast-[10%]"
+            alt=""
+          ></img>
+          <img
+            src={algiz}
+            className="absolute top-[274px] left-[calc(50%-160px-16px)] w-44"
+            alt=""
+          ></img>
+          <img
+            src={and}
+            className="absolute top-[258px] left-[calc(50%-160px+72px)] opacity-20 w-44 contrast-[10%]"
+            alt=""
+          ></img>
+          <img
+            src={angela}
+            className="absolute top-[360px] left-[calc(50%-160px+110px)] w-44"
+            alt=""
+          ></img>
+          <img
+            src={egg}
+            className="absolute top-[526px] left-[calc(50%-160px+57px)] w-52"
+            alt=""
+          ></img>
         </div>
       </div>
     </div>
