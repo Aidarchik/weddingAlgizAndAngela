@@ -13,7 +13,8 @@ import Invite from "./components/invite";
 function App() {
   return (
     <div className="App">
-      <div className="bg-hero-pattern bg-fixed bg-cover bg-center ">
+      <div className="bg-hero-pattern bg-fixed bg-cover bg-center">
+        <Invite image={{ greenBranch, invite, algiz, and, angela, egg }} />
         <Invite image={{ greenBranch, invite, algiz, and, angela, egg }} />
         {/* <div className="h-screen border-2 border-red-800 flex justify-center">
           <div className="relative w-20 sm:w-40 md:w-60 h-20 border-2 border-green-800">
