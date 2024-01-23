@@ -14,11 +14,11 @@ export default function Invite(props) {
       ></img>
       <img
         src={and}
-        className={`absolute top-[68vw] w-[48vw] sm:top-[1vw] sm:w-[1vw] md:top-[1vw] md:w-[1vw] lg:top-[1vw] lg:w-[1vw] xl:top-[1vw] xl:w-[1vw] opacity-20 contrast-[10%]`}
+        className={`absolute top-[68vw] w-[48vw] sm:top-[66vw] sm:w-[39vw] md:top-[40vw] md:w-[1vw] lg:top-[1vw] lg:w-[1vw] xl:top-[1vw] xl:w-[1vw] opacity-20 contrast-[10%]`}
         alt=""
       ></img>
       <div
-        className={`absolute top-[68vw] w-[96vw] sm:top-[1vw] sm:w-[1vw] md:top-[1vw] md:w-[1vw] lg:top-[1vw] lg:w-[1vw] xl:top-[1vw] xl:w-[1vw] grid`}
+        className={`absolute top-[68vw] w-[96vw] sm:top-[63vw] sm:w-[90vw] md:top-[1vw] md:w-[1vw] lg:top-[1vw] lg:w-[1vw] xl:top-[1vw] xl:w-[1vw] grid`}
       >
         <img
           src={algiz}
@@ -33,7 +33,7 @@ export default function Invite(props) {
       </div>
       <img
         src={egg}
-        className={`absolute top-[138vw] w-[53vw] sm:top-[1vw] sm:w-[1vw] md:top-[1vw] md:w-[1vw] lg:top-[1vw] lg:w-[1vw] xl:top-[1vw] xl:w-[1vw]`}
+        className={`absolute top-[138vw] w-[53vw] sm:top-[128vw] sm:w-[43vw] md:top-[1vw] md:w-[1vw] lg:top-[1vw] lg:w-[1vw] xl:top-[1vw] xl:w-[1vw]`}
         alt=""
       ></img>
     </div>
