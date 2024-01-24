@@ -1,41 +1,48 @@
 export default function Invite(props) {
   const { greenBranch, invite, algiz, and, angela, egg } = props.image;
   return (
-    <div className="relative min-h-screen border-0 border-red-800 flex justify-center">
-      <img
-        src={greenBranch}
-        className={`absolute top-[-5.3vw] w-[98vw] sm:top-[-5.1vw] sm:w-[96vw] md:top-[-3.9vw] md:w-[72vw] lg:top-[-3.2vw] lg:w-[60vw] xl:top-[-3.7vw] xl:w-[69vw] h-fit`}
-        alt=""
-      ></img>
-      <img
-        src={invite}
-        className={`absolute top-[30vw] w-[42vw] sm:top-[25vw] sm:w-[40vw] md:top-[21vw] md:w-[35vw] lg:top-[17vw] lg:w-[25vw] xl:top-[17vw] xl:w-[24vw] h-fit contrast-[10%]`}
-        alt=""
-      ></img>
-      <img
-        src={and}
-        className={`absolute top-[68vw] w-[48vw] sm:top-[66vw] sm:w-[39vw] md:top-[51vw] md:w-[33vw] lg:top-[34vw] lg:w-[26vw] xl:top-[32vw] xl:w-[25vw] opacity-20 contrast-[10%]`}
-        alt=""
-      ></img>
-      <div
-        className={`absolute top-[68vw] w-[96vw] sm:top-[63vw] sm:w-[90vw] md:top-[44vw] md:w-[92vw] lg:top-[28vw] lg:w-[73vw] xl:top-[28vw] xl:w-[65vw] grid`}
-      >
-        <img
-          src={algiz}
-          className="w-full col-start-1 col-span-10"
-          alt=""
-        ></img>
-        <img
-          src={angela}
-          className="w-full col-start-8 col-span-12"
-          alt=""
-        ></img>
+    <div className="h-full min-h-screen border-2 border-red-800 flex container mx-auto">
+      <div className="invite__row flex flex-col content-center justify-start">
+        <div className="invite__column flex-grow-0 flex-shrink basis-auto">
+          <div className="invite__item border-0 border-blue-700">
+            <div className="invite__item__row flex justify-center">
+              <div className="invite__item__image flex-grow-0 flex-shrink-0 basis-[120%]">
+                <img
+                  src={greenBranch}
+                  alt=""
+                  className="relative top-[-7vw] mx-auto"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="invite__column flex-grow-0 flex-shrink basis-auto">
+          <div className="invite__item border-0 border-blue-700 mb-6">
+            <div className="invite__item__row flex justify-center">
+              <div className="invite__item__image flex-grow-0 flex-shrink-0 basis-[43%]">
+                <img
+                  src={invite}
+                  alt=""
+                  className="h-fit contrast-[10%] mx-auto"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="invite__column flex-grow-0 flex-shrink basis-auto">
+          <div className="invite__item border-0 border-blue-700">
+            <div className="invite__item__row flex justify-center">
+              <div className="invite__item__image flex-grow-0 flex-shrink-0 basis-[50%]">
+                <img
+                  src={and}
+                  alt=""
+                  className="opacity-20 contrast-[10%] mx-auto"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <img
-        src={egg}
-        className={`absolute top-[138vw] w-[53vw] sm:top-[128vw] sm:w-[43vw] md:top-[105vw] md:w-[35vw] lg:top-[78vw] lg:w-[25vw] xl:top-[72vw] xl:w-[22vw]`}
-        alt=""
-      ></img>
     </div>
   );
 }
