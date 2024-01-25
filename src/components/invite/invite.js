@@ -7,16 +7,8 @@ import angela from "../../assets/angela.png";
 import angelaBlack from "../../assets/angela_black.png";
 import egg from "../../assets/pngegg.png";
 import "./invite.css";
-import { useEffect, useState } from "react";
 
-export default function Invite() {
-  const [domReady, setDomReady] = useState(false);
-
-  useEffect(() => {
-    const interval = setInterval(() => setDomReady((prev) => !prev), 3000);
-    return () => clearInterval(interval);
-  }, []);
-
+export default function Invite({ domReady }) {
   return (
     <div className="h-full min-h-screen border-0 container mx-auto border-red-800 overflow-hidden pb-5">
       <div
