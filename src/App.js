@@ -1,13 +1,13 @@
 import greenBranch from "./assets/green_branch.png";
 import invite from "./assets/invite.png";
 import algiz from "./assets/algiz.png";
-// import algizBlack from './assets/algiz_black.png';
+import algizBlack from "./assets/algiz_black.png";
 import and from "./assets/and.png";
 import angela from "./assets/angela.png";
-// import angelaBlack from './assets/angela_black.png';
+import angelaBlack from "./assets/angela_black.png";
 import egg from "./assets/pngegg.png";
 import "./App.css";
-import Invite from "./components/invite";
+import Invite from "./components/invite/invite";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
 // import Tmp from './components/tmp'
@@ -33,10 +33,30 @@ function App() {
         } bg-fixed bg-cover bg-center relative z-50`}
       >
         <Invite
-          image={{ greenBranch, invite, algiz, and, angela, egg, flag }}
+          image={{
+            greenBranch,
+            invite,
+            algiz,
+            algizBlack,
+            and,
+            angela,
+            angelaBlack,
+            egg,
+            flag,
+          }}
         />
         <Invite
-          image={{ greenBranch, invite, algiz, and, angela, egg, inView }}
+          image={{
+            greenBranch,
+            invite,
+            algiz,
+            algizBlack,
+            and,
+            angela,
+            angelaBlack,
+            egg,
+            inView,
+          }}
         />
         {/* <div className="h-screen border-2 border-red-800 flex justify-center">
           <div className="relative w-20 sm:w-40 md:w-60 h-20 border-2 border-green-800">

@@ -1,5 +1,16 @@
+import "./invite.css";
 export default function Invite(props) {
-  const { greenBranch, invite, algiz, and, angela, egg, flag } = props.image;
+  const {
+    greenBranch,
+    invite,
+    algiz,
+    algizBlack,
+    and,
+    angela,
+    angelaBlack,
+    egg,
+    flag,
+  } = props.image;
   return (
     <div className="h-full min-h-screen border-0 container mx-auto border-red-800 overflow-hidden pb-5">
       <div className="invite__row flex flex-col content-center justify-start lg:relative">
@@ -31,21 +42,15 @@ export default function Invite(props) {
               <div className="invite__item__image flex-grow-0 flex-shrink basis-auto lg:basis-[61%] border-0 border-blue-700">
                 <div className="names__row flex flex-col border-0 border-blue-700 relative mx-[5%] my-[15%] lg:my-[2%]">
                   <div className="names__column flex">
-                    <div className="names__item flex-grow-0 flex-shrink-0 basis-[60%] lg:basis-[60%] mr-[40%]">
-                      <img
-                        src={algiz}
-                        alt=""
-                        className="transition duration-[5000] hover:grayscale hover:contrast-200"
-                      />
+                    <div className="names__item flex-grow-0 flex-shrink-0 basis-[60%] lg:basis-[60%] mr-[40%] relative">
+                      <img src={algiz} alt="" className="algiz" />
+                      <img src={algizBlack} alt="" className="algiz-black" />
                     </div>
                   </div>
                   <div className="names__column flex">
-                    <div className="names__item flex-grow-0 flex-shrink-0 basis-[60%] lg:basis-[60%] ml-[40%]">
-                      <img
-                        src={angela}
-                        alt=""
-                        className="hover:grayscale transition duration-[5000] hover:contrast-200"
-                      />
+                    <div className="names__item flex-grow-0 flex-shrink-0 basis-[60%] lg:basis-[60%] ml-[40%] relative">
+                      <img src={angela} alt="" className="angela" />
+                      <img src={angelaBlack} alt="" className="angela-black" />
                     </div>
                   </div>
                   <div className="names__column flex absolute z-0 top-[-5%] left-[30%] md:top-[-5%] md:left-[26%] lg:top-[-10%] lg:left-[25%] xl:top-[5%] xl:left-[30%] 2xl:top-[10%] 2xl:left-[30%]">
