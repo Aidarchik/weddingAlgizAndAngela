@@ -32,9 +32,9 @@ function App() {
         <ContentWrapperRight>
           <DearGuests />
         </ContentWrapperRight>
-        <ContentWrapperRight>
+        <ContentWrapperLeft>
           <DearGuests />
-        </ContentWrapperRight>
+        </ContentWrapperLeft>
         <ContentWrapperLeft>
           <DearGuests />
         </ContentWrapperLeft>
@@ -47,9 +47,24 @@ function App() {
         <ContentWrapperRight>
           <DearGuests />
         </ContentWrapperRight>
+        <ContentWrapperLeft>
+          <DearGuests />
+        </ContentWrapperLeft>
+        <ContentWrapperLeft>
+          <DearGuests />
+        </ContentWrapperLeft>
         <ContentWrapperRight>
           <DearGuests />
         </ContentWrapperRight>
+        <ContentWrapperLeft>
+          <DearGuests />
+        </ContentWrapperLeft>
+        <ContentWrapperRight>
+          <DearGuests />
+        </ContentWrapperRight>
+        <ContentWrapperLeft>
+          <DearGuests />
+        </ContentWrapperLeft>
       </div>
     </div>
   );

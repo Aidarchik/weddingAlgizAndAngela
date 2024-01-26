@@ -10,7 +10,7 @@ import "./invite.css";
 
 export default function Invite({ domReady }) {
   return (
-    <div className="h-full min-h-screen border-0 container mx-auto border-red-800 pb-5">
+    <div className="h-full min-h-screen border-0 container mx-auto border-red-800 pb-5 overflow-hidden">
       <div
         className={`absolute z-40 top-0 left-0 bg-white w-full h-full min-h-screen trasition duration-[1000ms] ${
           domReady ? "opacity-0" : "opacity-100"
@@ -20,7 +20,7 @@ export default function Invite({ domReady }) {
         <div className="invite__column flex-grow-0 flex-shrink basis-auto">
           <div className="invite__item border-0 border-blue-700">
             <div className="invite__item__row flex justify-center">
-              <div className="invite__item__image flex-grow-0 flex-shrink-0 basis-[120%] lg:basis-[60%]">
+              <div className="invite__item__image flex-grow-0 flex-shrink-0 basis-[100%] lg:basis-[60%]">
                 <img
                   src={greenBranch}
                   alt=""
