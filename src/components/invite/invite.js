@@ -10,7 +10,7 @@ import "./invite.css";
 
 export default function Invite({ domReady }) {
   return (
-    <div className="h-full min-h-screen border-0 container mx-auto border-red-800 overflow-hidden pb-5">
+    <div className="h-full min-h-screen border-0 container mx-auto border-red-800 pb-5">
       <div
         className={`absolute z-40 top-0 left-0 bg-white w-full h-full min-h-screen trasition duration-[1000ms] ${
           domReady ? "opacity-0" : "opacity-100"
@@ -24,7 +24,7 @@ export default function Invite({ domReady }) {
                 <img
                   src={greenBranch}
                   alt=""
-                  className={`relative mx-auto trasition duration-[1000ms] ${
+                  className={`relative mx-auto trasition duration-[2000ms] ${
                     domReady ? "translate-y-0" : "-translate-y-full"
                   }`}
                 />
@@ -39,7 +39,7 @@ export default function Invite({ domReady }) {
                 <img
                   src={invite}
                   alt=""
-                  className={`h-fit contrast-[10%] mx-auto trasition duration-[1000ms] ${
+                  className={`h-fit contrast-[10%] mx-auto trasition duration-[4000ms] ${
                     !domReady ? "scale-0" : "-scale-full"
                   }`}
                 />
@@ -58,7 +58,7 @@ export default function Invite({ domReady }) {
                       <img
                         src={algizBlack}
                         alt=""
-                        className={`algiz-black trasition duration-[1500ms] ${
+                        className={`algiz-black trasition duration-[2000ms] ${
                           domReady ? "opacity-0" : "opacity-100"
                         }`}
                       />
@@ -70,7 +70,7 @@ export default function Invite({ domReady }) {
                       <img
                         src={angelaBlack}
                         alt=""
-                        className={`angela-black trasition duration-[1500ms] ${
+                        className={`angela-black trasition duration-[2000ms] ${
                           domReady ? "opacity-0" : "opacity-100"
                         }`}
                       />
@@ -80,7 +80,7 @@ export default function Invite({ domReady }) {
                     <div className="names__item flex-grow-0 flex-shrink-0 basis-[75%] lg:basis-full">
                       <img
                         src={and}
-                        className={`opacity-20 contrast-[10%] trasition duration-[1000ms] ${
+                        className={`opacity-20 contrast-[10%] trasition duration-[3000ms] ${
                           !domReady ? "scale-0" : "-scale-full"
                         }`}
                         alt=""
@@ -99,7 +99,7 @@ export default function Invite({ domReady }) {
                 <img
                   src={egg}
                   alt=""
-                  className={`mx-auto trasition duration-[1000ms] ${
+                  className={`mx-auto trasition duration-[2000ms] ${
                     !domReady ? "scale-0" : "-scale-full"
                   }`}
                 />
