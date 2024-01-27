@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face { 
+  font-family: "lastochka"; 
+  src: url("./ofont.ru_Lastochka.ttf"); 
+} 
+@font-face { 
+  font-family: "Czizh"; 
+  src: url("./ofont.ru_Czizh.ttf"); 
+} 
+@font-face { 
+  font-family: "Cruinn"; 
+  src: url("./ofont.ru_PetersburgITT.ttf"); 
+} 
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

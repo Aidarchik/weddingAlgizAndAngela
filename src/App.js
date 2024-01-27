@@ -20,9 +20,6 @@ function App() {
     <div className="App">
       <Invite domReady={domReady} />
       <div className={`${!domReady && "hidden"}`}>
-        <ContentWrapperLeft>
-          <DearGuests />
-        </ContentWrapperLeft>
         <ContentWrapperRight>
           <DearGuests />
         </ContentWrapperRight>

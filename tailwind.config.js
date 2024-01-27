@@ -9,6 +9,11 @@ module.exports = {
         "angela-black": "url('./assets/angela_black.png')",
         // "bg-and": "url('./assets/and.png')",
       },
+      fontFamily: {
+        lastochka: ["lastochka"],
+        Czizh: ["Czizh"],
+        Cruinn: ["Cruinn"],
+      },
     },
   },
   plugins: [],
