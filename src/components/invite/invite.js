@@ -39,8 +39,8 @@ export default function Invite({ domReady }) {
                 <img
                   src={invite}
                   alt=""
-                  className={`h-fit contrast-[10%] mx-auto trasition duration-[4000ms] ${
-                    !domReady ? "scale-0" : "-scale-full"
+                  className={`contrast-[10%] mx-auto trasition duration-[4000ms] ${
+                    !domReady ? "scale-0" : "scale-100"
                   }`}
                 />
               </div>
