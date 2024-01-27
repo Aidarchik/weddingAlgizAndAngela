@@ -5,7 +5,7 @@ import hearts_L from "../../assets/hearts_left.png";
 import hearts_R from "../../assets/herats_right.png";
 // import hearts_R from "../assets/herats_right.png";
 export function ContentWrapperLeft(props) {
-  const { ref, inView, entry } = useInView({
+  const { ref, inView } = useInView({
     threshold: 0,
   });
   return (
@@ -32,7 +32,7 @@ export function ContentWrapperLeft(props) {
 }
 
 export function ContentWrapperRight(props) {
-  const { ref, inView, entry } = useInView({
+  const { ref, inView } = useInView({
     threshold: 0,
   });
   return (
