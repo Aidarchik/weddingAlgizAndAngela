@@ -2,11 +2,15 @@ import dearGuests from "../../assets/dear_guests.png";
 
 export default function DearGuests() {
   return (
-    <div className="dg w-[80%] mx-auto">
+    <div className="dg mx-auto">
       <div className="dg__row">
         <div className="dg__column">
           <div className="dg__item">
-            <img src={dearGuests} alt="" />
+            <img
+              src={dearGuests}
+              alt=""
+              className="mx-auto w-[350px] max-w-full"
+            />
           </div>
         </div>
         <div className="dg__column">

@@ -3,10 +3,11 @@ import "./App.css";
 import Invite from "./components/invite/invite";
 // import DearGuests from "./components/dear-guests/dear-guests";
 import {
-  ContentWrapperLeft,
+  // ContentWrapperLeft,
   ContentWrapperRight,
 } from "./components/content-wrapper/content-wrapper";
 import DearGuests from "./components/dear-guests/dear-guests";
+import Date from "./components/date/wedding-date";
 // import Tmp from './components/tmp'
 
 function App() {
@@ -23,45 +24,13 @@ function App() {
         <ContentWrapperRight>
           <DearGuests />
         </ContentWrapperRight>
-        <ContentWrapperLeft>
-          <DearGuests />
-        </ContentWrapperLeft>
+        <Date />
         <ContentWrapperRight>
           <DearGuests />
         </ContentWrapperRight>
-        <ContentWrapperLeft>
-          <DearGuests />
-        </ContentWrapperLeft>
-        <ContentWrapperLeft>
-          <DearGuests />
-        </ContentWrapperLeft>
         <ContentWrapperRight>
           <DearGuests />
         </ContentWrapperRight>
-        <ContentWrapperLeft>
-          <DearGuests />
-        </ContentWrapperLeft>
-        <ContentWrapperRight>
-          <DearGuests />
-        </ContentWrapperRight>
-        <ContentWrapperLeft>
-          <DearGuests />
-        </ContentWrapperLeft>
-        <ContentWrapperLeft>
-          <DearGuests />
-        </ContentWrapperLeft>
-        <ContentWrapperRight>
-          <DearGuests />
-        </ContentWrapperRight>
-        <ContentWrapperLeft>
-          <DearGuests />
-        </ContentWrapperLeft>
-        <ContentWrapperRight>
-          <DearGuests />
-        </ContentWrapperRight>
-        <ContentWrapperLeft>
-          <DearGuests />
-        </ContentWrapperLeft>
       </div>
     </div>
   );
