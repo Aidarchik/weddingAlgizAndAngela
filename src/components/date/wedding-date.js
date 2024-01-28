@@ -37,8 +37,8 @@ export default function WeddingDate() {
             <img
               src={heartImage}
               alt=""
-              className={`absolute invert top-[-30%] transition duration-1000 ${
-                toggleScale ? "scale-100" : "scale-75"
+              className={`absolute invert top-[-20%] transition duration-1000 ${
+                toggleScale ? "scale-150" : "scale-100"
               }`}
             />
             3
