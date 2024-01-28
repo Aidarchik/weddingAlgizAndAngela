@@ -2,7 +2,7 @@ import dearGuests from "../../assets/dear_guests.png";
 
 export default function DearGuests() {
   return (
-    <div className="dg mx-auto">
+    <div className="dg mx-auto mb-[200px]">
       <div className="dg__row">
         <div className="dg__column">
           <div className="dg__item">
