@@ -3,6 +3,7 @@ import "./App.css";
 import Invite from "./components/invite/invite";
 // import DearGuests from "./components/dear-guests/dear-guests";
 import {
+  ContentWrapperLeft,
   // ContentWrapperLeft,
   ContentWrapperRight,
 } from "./components/content-wrapper/content-wrapper";
@@ -10,6 +11,7 @@ import DearGuests from "./components/dear-guests/dear-guests";
 import Date from "./components/date/wedding-date";
 import Connector from "./components/connector";
 import WeddingLocation from "./components/location/location";
+import DressCode from "./components/dress-code/dress-code";
 // import Tmp from './components/tmp'
 
 function App() {
@@ -29,6 +31,12 @@ function App() {
         <Date />
         <Connector />
         <WeddingLocation />
+        <ContentWrapperLeft>
+          <DressCode />
+        </ContentWrapperLeft>
+        <ContentWrapperLeft>
+          <DressCode />
+        </ContentWrapperLeft>
       </div>
     </div>
   );

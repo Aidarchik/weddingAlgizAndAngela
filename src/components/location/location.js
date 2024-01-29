@@ -3,7 +3,7 @@ import { Map, Placemark, TypeSelector, YMaps } from "@pbe/react-yandex-maps";
 
 export default function WeddingLocation() {
   return (
-    <div className="mx-auto w-[450px] max-w-[80%] flex flex-col items-center text-green-900 italic">
+    <div className="mx-auto w-[450px] max-w-[80%] mb-10 flex flex-col items-center text-green-900 italic">
       <img src={locationImage} alt="" className="mb-[20px]" />
       <h1 className="text-2xl  font-semibold">Кафе «Диана»</h1>
       <p className="mb-2 text-sm">
@@ -27,7 +27,6 @@ export default function WeddingLocation() {
           <TypeSelector options={{ float: "right" }} />
         </Map>
       </YMaps>
-      ;
     </div>
   );
 }
