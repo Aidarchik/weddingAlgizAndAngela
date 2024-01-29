@@ -21,51 +21,53 @@ export default function Timer() {
     return () => clearInterval(interval);
   }, []);
   return (
-    <>
-      <h1 className="text-2xl">ДО СВАДЬБЫ ОСТАЛОСЬ</h1>
+    <div className="">
+      <h1 className="text-xl sm:text-2xl">ДО СВАДЬБЫ ОСТАЛОСЬ</h1>
       <div className="timer">
         <div className="timer__row flex item-center justify-center">
-          <div className="timer__column p-2">
+          <div className="timer__column p-1 sm:p-2">
             <div className="timer__item">
-              <div className="item__number text-2xl">{count.days}</div>
-              <h3 className="item__name text-sm uppercase">дней</h3>
+              <div className="item__number sm:text-2xl">{count.days}</div>
+              <h3 className="item__name text-xs sm:text-sm uppercase">дней</h3>
             </div>
           </div>
-          <div className="timer__column p-2">
+          <div className="timer__column p-1 sm:p-2">
             <div className="timer__item">
-              <div className="item__number text-2xl">:</div>
+              <div className="item__number sm:text-2xl">:</div>
             </div>
           </div>
-          <div className="timer__column p-2">
+          <div className="timer__column p-1 sm:p-2">
             <div className="timer__item">
-              <div className="item__number text-2xl">{count.hours}</div>
-              <h3 className="item__name text-sm uppercase">часов</h3>
+              <div className="item__number sm:text-2xl">{count.hours}</div>
+              <h3 className="item__name text-xs sm:text-sm uppercase">часов</h3>
             </div>
           </div>
-          <div className="timer__column p-2">
+          <div className="timer__column p-1 sm:p-2">
             <div className="timer__item">
-              <div className="item__number text-2xl">:</div>
+              <div className="item__number sm:text-2xl">:</div>
             </div>
           </div>
-          <div className="timer__column p-2">
+          <div className="timer__column p-1 sm:p-2">
             <div className="timer__item">
-              <div className="item__number text-2xl">{count.minutes}</div>
-              <h3 className="item__name text-sm uppercase">минут</h3>
+              <div className="item__number sm:text-2xl">{count.minutes}</div>
+              <h3 className="item__name text-xs sm:text-sm uppercase">минут</h3>
             </div>
           </div>
-          <div className="timer__column p-2">
+          <div className="timer__column p-1 sm:p-2">
             <div className="timer__item">
-              <div className="item__number text-2xl">:</div>
+              <div className="item__number sm:text-2xl">:</div>
             </div>
           </div>
-          <div className="timer__column p-2">
+          <div className="timer__column p-1 sm:p-2">
             <div className="timer__item">
-              <div className="item__number text-2xl">{count.seconds}</div>
-              <h3 className="item__name text-sm uppercase">секунд</h3>
+              <div className="item__number sm:text-2xl">{count.seconds}</div>
+              <h3 className="item__name text-xs sm:text-sm uppercase">
+                секунд
+              </h3>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

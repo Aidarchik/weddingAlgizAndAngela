@@ -7,7 +7,7 @@ export default function DressCode() {
       <div className="dg__row flex flex-col items-center">
         <div className="dg__column lg:mb-10">
           <div className="dg__item">
-            <img src={dressCode} alt="" className="max-w-[40%] mx-auto" />
+            <img src={dressCode} alt="" className="max-w-[50%] mx-auto" />
           </div>
         </div>
         <div className="dg__column sm:w-[350px] lg:w-[450px] mb-5 lg:mb-10">

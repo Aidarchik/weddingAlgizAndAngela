@@ -12,17 +12,17 @@ export function ContentWrapperLeft(props) {
     <div ref={ref} className="cw overflow-hidden mb-[40px]">
       <div className="container mx-auto h-full relative">
         <div className="cw__row flex items-center justify-center">
-          <div className="cw__image flex-initial basis-[20%] sm:basis-[13%] xl:basis-[10%] order-1  ">
+          <div className="cw__image flex-initial basis-[20%] sm:basis-[13%] xl:basis-[10%] order-1 relative z-10">
             <img src={greenBranchLeft} alt="" className="" />
           </div>
           <div
-            className={`cw__image flex-none absolute left-0 w-[100%] transition duration-[30000ms] ${
+            className={`cw__image flex-none absolute left-[-30%] z-0 w-[100%] transition ease-linear duration-[20000ms] ${
               inView && "translate-x-[130%]"
             }`}
           >
             <img src={hearts_L} alt="" className="top-0" />
           </div>
-          <div className="cw__body flex-initial basis-3/4 lg:basis-[50%] xl:basis-[40%] order-2 pr-6 mr-11">
+          <div className="cw__body flex-initial basis-3/4 lg:basis-[50%] xl:basis-[40%] order-2 pr-6 mr-11 relative z-10">
             {props.children}
           </div>
         </div>
@@ -39,17 +39,17 @@ export function ContentWrapperRight(props) {
     <div ref={ref} className="cw overflow-hidden mb-[40px]">
       <div className="container mx-auto h-full relative">
         <div className="cw__row flex items-center justify-center">
-          <div className="cw__image flex-initial basis-[20%] sm:basis-[13%] xl:basis-[10%] order-2  ">
+          <div className="cw__image flex-initial basis-[20%] sm:basis-[13%] xl:basis-[10%] order-2 relative z-10">
             <img src={greenBranchRight} alt="" className="" />
           </div>
           <div
-            className={`cw__image flex-none absolute right-0  w-[100%] transition duration-[30000ms] ${
+            className={`cw__image flex-none absolute right-[-30%] z-0 w-[100%] transition ease-linear duration-[20000ms] ${
               inView && "-translate-x-[130%]"
             }`}
           >
             <img src={hearts_R} alt="" className="top-0" />
           </div>
-          <div className="cw__body flex-initial basis-3/4 lg:basis-[50%] xl:basis-[40%] order-1 p-6 ml-11">
+          <div className="cw__body flex-initial basis-3/4 lg:basis-[50%] xl:basis-[40%] order-1 p-6 ml-11 relative z-10">
             {props.children}
           </div>
         </div>
