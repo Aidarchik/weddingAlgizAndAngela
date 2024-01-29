@@ -23,7 +23,7 @@ export default function DressCode() {
             <img
               src={dressCodeColors}
               alt=""
-              className="mx-auto bg-gray-950 rounded-full bg-opacity-5"
+              className="mx-auto bg-gray-950 rounded-full bg-opacity-0"
             />
           </div>
         </div>
