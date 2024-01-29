@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  @apply bg-hero-pattern bg-fixed bg-cover bg-center relative -z-50;
+  @apply bg-hero-pattern bg-fixed bg-cover bg-center;
 }
 
 .App-logo {

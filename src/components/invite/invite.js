@@ -53,7 +53,7 @@ export default function Invite({ domReady }) {
               <div className="invite__item__image flex-grow-0 flex-shrink basis-auto lg:basis-[61%] border-0 border-blue-700">
                 <div className="names__row flex flex-col border-0 border-blue-700 relative mx-[5%] my-[15%] lg:my-[2%]">
                   <div className="names__column flex">
-                    <div className="names__item flex-grow-0 flex-shrink-0 basis-[60%] lg:basis-[60%] mr-[40%] relative z-50">
+                    <div className="names__item flex-grow-0 flex-shrink-0 basis-[60%] lg:basis-[60%] mr-[40%] relative z-10">
                       <img src={algiz} alt="" className="algiz" />
                       <img
                         src={algizBlack}
@@ -65,7 +65,7 @@ export default function Invite({ domReady }) {
                     </div>
                   </div>
                   <div className="names__column flex">
-                    <div className="names__item flex-grow-0 flex-shrink-0 basis-[60%] lg:basis-[60%] ml-[40%] relative z-50">
+                    <div className="names__item flex-grow-0 flex-shrink-0 basis-[60%] lg:basis-[60%] ml-[40%] relative z-10">
                       <img src={angela} alt="" className="angela" />
                       <img
                         src={angelaBlack}
@@ -95,7 +95,7 @@ export default function Invite({ domReady }) {
         <div className="invite__column flex-grow-0 flex-shrink basis-auto lg:min-h-10">
           <div className="invite__item border-0 border-blue-700">
             <div className="invite__item__row flex justify-center">
-              <div className="invite__item__image flex-grow-0 flex-shrink-0 basis-[43%] md:basis-[30%] lg:absolute lg:w-[20%] lg:left-[10%] lg:top-[60%] lg:-z-10 lg:opacity-60">
+              <div className="invite__item__image flex-grow-0 flex-shrink-0 basis-[43%] md:basis-[30%] lg:absolute lg:w-[20%] lg:left-[10%] lg:top-[60%] lg:z-0 lg:opacity-60">
                 <img
                   src={egg}
                   alt=""

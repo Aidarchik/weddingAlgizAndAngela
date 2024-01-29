@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Calendar.css";
-export default function Calendar(props) {
-  const { heartImage } = props;
+import heartImage from "../../../assets/heart.png";
+export default function Calendar() {
   const [toggleScale, setToggleScale] = useState(false);
   useEffect(() => {
     const interval = setInterval(() => {
@@ -10,7 +10,7 @@ export default function Calendar(props) {
     return () => clearInterval(interval);
   }, []);
   return (
-    <>
+    <div className="calendar_wrapper">
       <header className="calendar__header">
         <p className="current-date">Август 2024</p>
       </header>
@@ -71,6 +71,6 @@ export default function Calendar(props) {
           <li className="inactive weekend">1</li>
         </ul>
       </div>
-    </>
+    </div>
   );
 }
