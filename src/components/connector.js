@@ -10,8 +10,8 @@ export default function Connector() {
       <img
         src={egg}
         alt=""
-        className={`mx-auto w-[230px] max-w-[80%] transition duration-[4000ms] ${
-          !inView ? "scale-50" : "scale-75"
+        className={`mx-auto w-[230px] max-w-[80%] transition duration-[6000ms] ${
+          !inView ? "scale-0" : "scale-75"
         } `}
       />
     </div>

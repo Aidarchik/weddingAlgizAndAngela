@@ -34,6 +34,7 @@ function App() {
         <ContentWrapperLeft>
           <DressCode />
         </ContentWrapperLeft>
+        <Connector />
         <ContentWrapperLeft>
           <DressCode />
         </ContentWrapperLeft>
