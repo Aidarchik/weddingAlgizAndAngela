@@ -9,6 +9,7 @@ import {
 import DearGuests from "./components/dear-guests/dear-guests";
 import Date from "./components/date/wedding-date";
 import Connector from "./components/connector";
+import WeddingLocation from "./components/location/location";
 // import Tmp from './components/tmp'
 
 function App() {
@@ -27,13 +28,7 @@ function App() {
         </ContentWrapperRight>
         <Date />
         <Connector />
-        <ContentWrapperRight>
-          <DearGuests />
-        </ContentWrapperRight>
-        <Connector />
-        <ContentWrapperRight>
-          <DearGuests />
-        </ContentWrapperRight>
+        <WeddingLocation />
       </div>
     </div>
   );
