@@ -6,7 +6,7 @@ export default function WeddingLocation() {
     <div className="mx-auto w-[450px] max-w-[80%] flex flex-col items-center text-green-900 italic">
       <img src={locationImage} alt="" className="mb-[20px]" />
       <h1 className="text-2xl  font-semibold">Кафе «Диана»</h1>
-      <p className="mb-4">
+      <p className="mb-2 text-sm">
         улица Бичуринский Тракт, 28Е, село Барда, Пермский край
       </p>
       <YMaps>
@@ -17,7 +17,7 @@ export default function WeddingLocation() {
             controls: ["zoomControl", "fullscreenControl"],
           }}
           width="95vw"
-          height="60vh"
+          height="45vh"
           instanceRef={(ref) => {
             ref && ref.behaviors.disable("scrollZoom");
           }}
