@@ -12,7 +12,8 @@ import Date from "./components/date/wedding-date";
 import Connector from "./components/connector";
 import WeddingLocation from "./components/location/location";
 import DressCode from "./components/dress-code/dress-code";
-// import Tmp from './components/tmp'
+import GuestForm from "./components/guest-form/guest-form";
+import Details from "./components/detail/detail";
 
 function App() {
   const [domReady, setDomReady] = useState(false);
@@ -35,8 +36,12 @@ function App() {
           <DressCode />
         </ContentWrapperLeft>
         <Connector />
+        <ContentWrapperRight>
+          <GuestForm />
+        </ContentWrapperRight>
+        <Connector />
         <ContentWrapperLeft>
-          <DressCode />
+          <Details />
         </ContentWrapperLeft>
       </div>
     </div>

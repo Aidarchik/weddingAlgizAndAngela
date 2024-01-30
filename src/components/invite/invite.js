@@ -10,15 +10,15 @@ import "./invite.css";
 
 export default function Invite({ domReady }) {
   return (
-    <div className="h-full min-h-screen border-0 container mx-auto border-red-800 pb-5 overflow-hidden">
+    <div className="h-full min-h-screen mx-auto overflow-hidden relative">
       <div
-        className={`absolute z-10 top-0 left-0 bg-white w-full h-full min-h-screen trasition duration-[1000ms] ${
+        className={`absolute z-10 top-0 left-0 bg-white w-full h-full trasition duration-[1000ms] ${
           domReady ? "opacity-0" : "opacity-100"
         }`}
       ></div>
       <div className="invite__row flex flex-col content-center justify-start lg:relative">
         <div className="invite__column flex-grow-0 flex-shrink basis-auto">
-          <div className="invite__item border-0 border-blue-700">
+          <div className="invite__item">
             <div className="invite__item__row flex justify-center">
               <div className="invite__item__image flex-grow-0 flex-shrink-0 basis-[100%] lg:basis-[60%]">
                 <img
@@ -33,7 +33,7 @@ export default function Invite({ domReady }) {
           </div>
         </div>
         <div className="invite__column flex-grow-0 flex-shrink basis-auto">
-          <div className="invite__item border-0 border-blue-700">
+          <div className="invite__item">
             <div className="invite__item__row flex justify-center">
               <div className="invite__item__image flex-grow-0 flex-shrink-0 basis-[43%] md:basis-[30%] lg:basis-[17%] xl:basis-[20%] 2xl:basis-[25%]">
                 <img
@@ -50,8 +50,8 @@ export default function Invite({ domReady }) {
         <div className="invite__column flex-grow-0 flex-shrink basis-auto">
           <div className="invite__item">
             <div className="invite__item__row flex justify-center">
-              <div className="invite__item__image flex-grow-0 flex-shrink basis-auto lg:basis-[61%] border-0 border-blue-700">
-                <div className="names__row flex flex-col border-0 border-blue-700 relative mx-[5%] my-[15%] lg:my-[2%]">
+              <div className="invite__item__image flex-grow-0 flex-shrink basis-auto lg:basis-[61%]">
+                <div className="names__row flex flex-col relative mx-[5%] my-[15%] lg:my-[2%]">
                   <div className="names__column flex">
                     <div className="names__item flex-grow-0 flex-shrink-0 basis-[60%] lg:basis-[60%] mr-[40%] relative z-20">
                       <img src={algiz} alt="" className="algiz" />
@@ -93,7 +93,7 @@ export default function Invite({ domReady }) {
           </div>
         </div>
         <div className="invite__column flex-grow-0 flex-shrink basis-auto lg:min-h-10">
-          <div className="invite__item border-0 border-blue-700">
+          <div className="invite__item">
             <div className="invite__item__row flex justify-center">
               <div className="invite__item__image flex-grow-0 flex-shrink-0 basis-[43%] md:basis-[30%] lg:absolute lg:w-[20%] lg:left-[10%] lg:top-[60%] lg:z-0 lg:opacity-60">
                 <img
