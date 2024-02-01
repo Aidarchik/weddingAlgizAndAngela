@@ -35,7 +35,7 @@ export default function Invite({ domReady }) {
         <div className="invite__column flex-grow-0 flex-shrink basis-auto">
           <div className="invite__item">
             <div className="invite__item__row flex justify-center">
-              <div className="invite__item__image flex-grow-0 flex-shrink-0 basis-[43%] md:basis-[30%] lg:basis-[17%] xl:basis-[20%] 2xl:basis-[25%]">
+              <div className="invite__item__image flex-grow-0 flex-shrink-0 basis-[43%] md:basis-[30%] lg:basis-[17%] xl:basis-[20%] 2xl:basis-[19%]">
                 <img
                   src={invite}
                   alt=""
@@ -53,7 +53,7 @@ export default function Invite({ domReady }) {
               <div className="invite__item__image flex-grow-0 flex-shrink basis-auto lg:basis-[61%]">
                 <div className="names__row flex flex-col relative mx-[5%] my-[15%] lg:my-[2%]">
                   <div className="names__column flex">
-                    <div className="names__item flex-grow-0 flex-shrink-0 basis-[60%] lg:basis-[60%] mr-[40%] relative z-20">
+                    <div className="names__item flex-grow-0 flex-shrink-0 basis-[60%] mr-[40%] relative z-20">
                       <img src={algiz} alt="" className="algiz" />
                       <img
                         src={algizBlack}
@@ -65,7 +65,7 @@ export default function Invite({ domReady }) {
                     </div>
                   </div>
                   <div className="names__column flex">
-                    <div className="names__item flex-grow-0 flex-shrink-0 basis-[60%] lg:basis-[60%] ml-[40%] relative z-20">
+                    <div className="names__item flex-grow-0 flex-shrink-0 basis-[60%] ml-[40%] relative z-20">
                       <img src={angela} alt="" className="angela" />
                       <img
                         src={angelaBlack}

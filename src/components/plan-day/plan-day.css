@@ -1,0 +1,57 @@
+.plan-day {
+    width: 50%;
+    margin: 40px auto 0;
+    display: grid;
+    justify-items: center;
+    gap: 40px;
+    
+}
+.plan-day__title>img {
+    width: 100%;
+}
+.plan-day__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.plan-day__column {
+    position: relative;
+}
+.plan-day__item {
+
+}
+.plan-day__row>.plan-day__column:not(:last-child)::before,
+.plan-day__row>.plan-day__column:not(:last-child)::after  {
+    content: '';
+    position: absolute;
+}
+
+.plan-day__row>.plan-day__column:not(:last-child)::before{
+    top: 3vw;
+    right: -1vw;
+    --size_delimiter: 1vw;
+    width: var(--size_delimiter);
+    height: var(--size_delimiter);
+    background: url('../../assets/delimiter.png') center/cover;
+}
+.plan-day__row>.plan-day__column:not(:last-child)::after  {
+    width: 9.8vw;
+    height: 1px;
+    top: 3.5vw;
+    right: 0;
+    transform: translate(50%,50%);
+    background-color: #000;
+}
+.item__content {
+    width: 100%;
+    font-size: 1vw;
+}
+.item__content>img {
+    margin: 0 auto 40px;
+    width: 7vw;
+
+}
+.content__title{
+    font-size: 1.3vw;
+    font-weight:bold;
+}
