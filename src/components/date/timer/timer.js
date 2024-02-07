@@ -9,7 +9,7 @@ export default function Timer() {
   });
   useEffect(() => {
     const interval = setInterval(() => {
-      const weddingDate = new Date("2024 Aug 3 09:00:00"); //1722664800000
+      const weddingDate = new Date(1722625200000); //"2024 Aug 3 00:00:00"
       const now = new Date();
       const gap = weddingDate - now;
       const days = Math.floor(gap / 1000 / 60 / 60 / 24);

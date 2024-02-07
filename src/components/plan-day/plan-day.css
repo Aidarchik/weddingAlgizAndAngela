@@ -1,57 +1,64 @@
 .plan-day {
-    width: 50%;
-    margin: 40px auto 0;
-    display: grid;
-    justify-items: center;
-    gap: 40px;
-    
+    box-sizing: border-box;
 }
-.plan-day__title>img {
-    width: 100%;
+.container {
+}
+.text-green-900 {
+}
+.font-Cruinn {
+}
+.italic {
+}
+.plan-day__title {
 }
 .plan-day__row {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
+    min-width: 100%;
 }
 .plan-day__column {
+    --marginbottom: 100px;
+    margin-bottom: var(--marginbottom);
     position: relative;
 }
 .plan-day__item {
-
+}
+.plan-day__row>.plan-day__column:last-child{
+    margin-bottom: 0;
 }
 .plan-day__row>.plan-day__column:not(:last-child)::before,
-.plan-day__row>.plan-day__column:not(:last-child)::after  {
+.plan-day__row>.plan-day__column:not(:last-child)::after {
     content: '';
     position: absolute;
 }
-
 .plan-day__row>.plan-day__column:not(:last-child)::before{
-    top: 3vw;
-    right: -1vw;
-    --size_delimiter: 1vw;
-    width: var(--size_delimiter);
-    height: var(--size_delimiter);
+    --delimitersize: 15px;
+    width: var(--delimitersize);
+    height: var(--delimitersize);
     background: url('../../assets/delimiter.png') center/cover;
+    bottom: -7.5px;
+    left: calc(15% - 7.5px);
+    transform: translateY(calc(var(--marginbottom) / 2));
 }
-.plan-day__row>.plan-day__column:not(:last-child)::after  {
-    width: 9.8vw;
-    height: 1px;
-    top: 3.5vw;
-    right: 0;
-    transform: translate(50%,50%);
-    background-color: #000;
+.plan-day__row>.plan-day__column:not(:last-child)::after {
+    background-color: #333;
+    top: 100%;
+    left: 15%;
+    width: 1px;
+    height: var(--marginbottom);
+}
+.item__icon {
+}
+.item__icon img {
+    position: relative;
+    width: 30%;
 }
 .item__content {
-    width: 100%;
-    font-size: 1vw;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 60%;
+    transform: translateY(-50%);                                       
+    @apply mb-2 text-sm
 }
-.item__content>img {
-    margin: 0 auto 40px;
-    width: 7vw;
-
-}
-.content__title{
-    font-size: 1.3vw;
-    font-weight:bold;
+.content__title {
+    @apply text-base md:text-2xl font-semibold;
 }
