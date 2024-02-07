@@ -18,10 +18,18 @@ export default function PlanDay() {
             </div>
             <div className="item__content">
               <span className="content__title">16:00 Сбор гостей</span>
-              <p>
-                встречаемся, знакомимся, обнимаемся, настраиваемся на веселую
-                свадьбу.
-              </p>
+              <p>встречаемся, знакомимся, обнимаемся.</p>
+            </div>
+          </div>
+        </div>
+        <div className="plan-day__column">
+          <div className="plan-day__item">
+            <div className="item__icon">
+              <img src={gathering} alt="" />
+            </div>
+            <div className="item__content">
+              <span className="content__title">16:30 Фуршет</span>
+              <p>настраиваемся на веселую свадьбу.</p>
             </div>
           </div>
         </div>
