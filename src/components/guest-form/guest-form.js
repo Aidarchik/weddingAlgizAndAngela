@@ -1,7 +1,17 @@
+import { useState } from "react";
 import guestFormImage from "../../assets/Guest_form.png";
 import "./guest-form.css";
 
 export default function GuestForm() {
+  const [name, setName] = useState("");
+  const [question, setQuestion] = useState("");
+  const onChangeQuestion = (e) => {
+    setQuestion(e.target.value);
+  };
+  const onSendDataHendler = (event) => {
+    event.preventDefault();
+    console.log(name, question);
+  };
   return (
     <div className="guest_form mx-auto max-w-full text-green-900 font-Cruinn italic">
       <img src={guestFormImage} alt="" />
@@ -15,6 +25,9 @@ export default function GuestForm() {
             id="formName"
             placeholder="Иван Иванов/Мария Ивановна"
             className="guest_form__input"
+            onChange={(e) => {
+              setName(e.target.value);
+            }}
           />
         </div>
         <div className="guest_form__title">Ваше присутствие:</div>
@@ -27,7 +40,8 @@ export default function GuestForm() {
                 name="question"
                 value="yes"
                 className="options__input"
-                checked
+                checked={question === "yes" ? true : false}
+                onChange={onChangeQuestion}
               />
               <label htmlFor="formYesQuestion" className="options__label">
                 Да, с удовольствием!
@@ -42,6 +56,8 @@ export default function GuestForm() {
                 name="question"
                 value="no"
                 className="options__input"
+                checked={question === "no" ? true : false}
+                onChange={onChangeQuestion}
               />
               <label htmlFor="formNoQuestion" className="options__label">
                 К сожалению, не смогу
@@ -49,7 +65,11 @@ export default function GuestForm() {
             </div>
           </div>
         </div>
-        <button type="submit" className="guest_form__button">
+        <button
+          type="submit"
+          onClick={onSendDataHendler}
+          className="guest_form__button"
+        >
           Отправить
         </button>
       </form>
