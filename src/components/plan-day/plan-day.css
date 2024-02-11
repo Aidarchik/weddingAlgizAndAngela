@@ -1,51 +1,40 @@
 .plan-day {
     box-sizing: border-box;
 }
-.container {
-}
-.text-green-900 {
-}
-.font-Cruinn {
-}
-.italic {
-}
 .plan-day__title {
 }
-.plan-day__row {
+.plan-day__body {
     min-width: 100%;
 }
-.plan-day__column {
-    --marginbottom: 100px;
+.plan-day__item {
+    --marginbottom: 70px;
     margin-bottom: var(--marginbottom);
     position: relative;
 }
-.plan-day__item {
-}
-.plan-day__row>.plan-day__column:last-child{
+.plan-day__body>.plan-day__item:last-child{
     margin-bottom: 0;
 }
-.plan-day__row>.plan-day__column:not(:last-child)::before,
-.plan-day__row>.plan-day__column:not(:last-child)::after {
+.plan-day__body>.plan-day__item:not(:last-child)::before,
+.plan-day__body>.plan-day__item:not(:last-child)::after {
     content: '';
     position: absolute;
 }
-.plan-day__row>.plan-day__column:not(:last-child)::before{
-    --delimitersize: 15px;
+.plan-day__body>.plan-day__item:not(:last-child)::before{
+    --delimitersize: 14px;
     width: var(--delimitersize);
     height: var(--delimitersize);
     background: url('../../assets/delimiter.png') center/cover;
     bottom: -7.5px;
-    left: calc(15% - 7.5px);
+    left: calc(15% - 6.3px);
     transform: translateY(calc(var(--marginbottom) / 2));
+    z-index: 1;
 }
-.plan-day__row>.plan-day__column:not(:last-child)::after {
+.plan-day__body>.plan-day__item:not(:last-child)::after {
     background-color: #333;
     top: 100%;
     left: 15%;
     width: 1px;
     height: var(--marginbottom);
-}
-.item__icon {
 }
 .item__icon img {
     position: relative;
@@ -56,8 +45,8 @@
     top: 50%;
     right: 0;
     width: 60%;
-    transform: translateY(-50%);                                       
-    @apply mb-2 text-sm
+    /* transform: translateY(-50%);  */
+    @apply mb-2 text-sm md:text-lg;
 }
 .content__title {
     @apply text-base md:text-2xl font-semibold;

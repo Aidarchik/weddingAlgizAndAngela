@@ -1,23 +1,58 @@
 import guestFormImage from "../../assets/Guest_form.png";
+import "./guest-form.css";
 
 export default function GuestForm() {
   return (
-    <div className="dg mx-auto max-w-full">
-      <div className="dg__row flex flex-col items-center">
-        <div className="dg__column sm:mb-10">
-          <div className="dg__item">
-            <img src={guestFormImage} alt="" className="max-w-[75%] mx-auto" />
+    <div className="guest_form mx-auto max-w-full text-green-900 font-Cruinn italic">
+      <img src={guestFormImage} alt="" />
+      <label>Просьба дать свой ответ до 14.06.2023</label>
+      <form action="#" method="post" className="guest_form__body">
+        <div className="guest_form__title">Ваши Имя и Фамилия</div>
+        <div className="guest_form__item">
+          <input
+            type="text"
+            name="name"
+            id="formName"
+            placeholder="Иван Иванов/Мария Ивановна"
+            className="guest_form__input"
+          />
+        </div>
+        <div className="guest_form__title">Ваше присутствие:</div>
+        <div className="guest_form__item">
+          <div className="options">
+            <div className="options__item">
+              <input
+                type="radio"
+                id="formYesQuestion"
+                name="question"
+                value="yes"
+                className="options__input"
+                checked
+              />
+              <label htmlFor="formYesQuestion" className="options__label">
+                Да, с удовольствием!
+              </label>
+            </div>
+          </div>
+          <div className="options">
+            <div className="options__item">
+              <input
+                type="radio"
+                id="formNoQuestion"
+                name="question"
+                value="no"
+                className="options__input"
+              />
+              <label htmlFor="formNoQuestion" className="options__label">
+                К сожалению, не смогу
+              </label>
+            </div>
           </div>
         </div>
-        <div className="dg__column sm:w-[350px] lg:w-[450px] mb-5 lg:mb-10">
-          <div className="dg__item text-green-900  lg:text-xl italic font-Cruinn">
-            <p>
-              Мы будем рады, если своими нарядами вы поддержите цветовую гамму
-              дня
-            </p>
-          </div>
-        </div>
-      </div>
+        <button type="submit" className="guest_form__button">
+          Отправить
+        </button>
+      </form>
     </div>
   );
 }

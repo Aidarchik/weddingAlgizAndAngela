@@ -1,0 +1,46 @@
+.guest_form {
+}
+.guest_form>img{
+    margin: 0 auto;
+    margin-bottom: 10px;
+    max-width: 70%;
+}
+.guest_form>label{
+    display: inline-block;
+    opacity: 0.6;
+    margin-bottom: 20px;
+}
+
+.guest_form__body {
+    margin: 0 auto;
+    text-align: start;
+    @apply md:w-[50%];
+}
+.guest_form__title {
+    margin-bottom: 5px;
+}
+.guest_form__item {
+    margin-bottom: 20px;
+    
+}
+.guest_form__input {
+    width: 100%;
+    border: 1px solid #146b18;
+    padding: 10px;
+}
+.options {
+}
+.options__item {
+    margin-bottom: 5px;
+
+}
+.options__input {
+}
+.options__label {
+    margin-left: 5px;
+}
+.guest_form__button {
+    width: 100%;
+    border: 1px solid #146b18;
+    padding: 10px;
+}

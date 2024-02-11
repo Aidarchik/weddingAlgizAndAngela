@@ -10,7 +10,7 @@ export function ContentWrapperLeft(props) {
     triggerOnce: true,
   });
   return (
-    <div ref={ref} className="cw overflow-hidden mb-[40px]">
+    <div ref={ref} className="cw overflow-hidden">
       <div className="container mx-auto h-full relative">
         <div className="cw__row flex items-center justify-center">
           <div className="cw__image flex-initial basis-[20%] sm:basis-[13%] xl:basis-[10%] order-1 relative z-10">

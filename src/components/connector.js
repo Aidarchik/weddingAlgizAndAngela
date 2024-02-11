@@ -6,7 +6,7 @@ export default function Connector() {
     threshold: 0,
   });
   return (
-    <div ref={ref} className="w-full mb-[40px]">
+    <div ref={ref} className="w-full py-[40px]">
       <img
         src={egg}
         alt=""

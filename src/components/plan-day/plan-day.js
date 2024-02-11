@@ -1,8 +1,10 @@
 import planDayTitle from "../../assets/plan_day.png";
 import gathering from "../../assets/gathering_of_guests.png";
+import furshet from "../../assets/furshet.png";
 import ceremony from "../../assets/ceremony.png";
 import banket from "../../assets/banket.png";
 import "./plan-day.css";
+import PlanDayItems from "./components/plan-day-items";
 
 export default function PlanDay() {
   return (
@@ -10,56 +12,28 @@ export default function PlanDay() {
       <div className="plan-day__title">
         <img src={planDayTitle} alt="" className="mb-[20px]" />
       </div>
-      <div className="plan-day__row">
-        <div className="plan-day__column">
-          <div className="plan-day__item">
-            <div className="item__icon">
-              <img src={gathering} alt="" />
-            </div>
-            <div className="item__content">
-              <span className="content__title">16:00 Сбор гостей</span>
-              <p>встречаемся, знакомимся, обнимаемся.</p>
-            </div>
-          </div>
-        </div>
-        <div className="plan-day__column">
-          <div className="plan-day__item">
-            <div className="item__icon">
-              <img src={gathering} alt="" />
-            </div>
-            <div className="item__content">
-              <span className="content__title">16:30 Фуршет</span>
-              <p>настраиваемся на веселую свадьбу.</p>
-            </div>
-          </div>
-        </div>
-        <div className="plan-day__column">
-          <div className="plan-day__item">
-            <div className="item__icon">
-              {" "}
-              <img src={ceremony} alt="" />
-            </div>
-            <div className="item__content">
-              <span className="content__title">17:00 Выездная церемония</span>
-              <p>
-                немного радостных трогательных формальностей - то, ради чего
-                собрались.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="plan-day__column">
-          <div className="plan-day__item">
-            <div className="item__icon">
-              {" "}
-              <img src={banket} alt="" />
-            </div>
-            <div className="item__content">
-              <span className="content__title">17:30 Начало банкета</span>
-              <p>от души посмеёмся и сделаем этот вечер незабываемым вместе.</p>
-            </div>
-          </div>
-        </div>
+      <div className="plan-day__body">
+        <PlanDayItems
+          image={gathering}
+          title="16:00 Сбор гостей"
+          desc="встречаемся, знакомимся, обнимаемся."
+        />
+        <PlanDayItems
+          image={furshet}
+          title="16:30 Фуршет"
+          desc="настраиваемся на веселую свадьбу."
+        />
+        <PlanDayItems
+          image={ceremony}
+          title="17:00 Выездная церемония"
+          desc="немного радостных трогательных формальностей - то, ради чего
+          собрались."
+        />
+        <PlanDayItems
+          image={banket}
+          title="17:30 Начало банкета"
+          desc="от души посмеёмся и сделаем этот вечер незабываемым вместе."
+        />
       </div>
     </div>
   );
