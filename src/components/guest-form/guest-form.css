@@ -28,6 +28,11 @@
     border: 1px solid #146b18;
     padding: 10px;
 }
+.guest_form__input:focus-visible {
+    outline-width: 0;
+    border: 1px solid #146b18;
+    box-shadow: 0 0 0 1px #146b18;
+}
 .options {
 }
 .options__item {
@@ -44,3 +49,20 @@
     border: 1px solid #146b18;
     padding: 10px;
 }
+.guest_form__button:hover {
+    background-color: #146b18;
+    color: white;
+}
+.info-block{
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    /* display: none; */
+    
+}
+.info-block__validate{
+    color: red;
+}
+.info-block__visible{
+    display: none;
+}
+

@@ -4,18 +4,30 @@ import "./guest-form.css";
 
 export default function GuestForm() {
   const [name, setName] = useState("");
+  const [validate, setVaidate] = useState(false);
+  const [visible, setVisible] = useState(false);
   const [question, setQuestion] = useState("");
   const onChangeQuestion = (e) => {
     setQuestion(e.target.value);
   };
   const onSendDataHendler = (event) => {
     event.preventDefault();
+    setVisible(true);
+    if (name !== "") setVaidate(true);
+    else setVaidate(false);
     console.log(name, question);
   };
   return (
     <div className="guest_form mx-auto max-w-full text-green-900 font-Cruinn italic">
       <img src={guestFormImage} alt="" />
       <label>Просьба дать свой ответ до 14.06.2023</label>
+      <div
+        className={`info-block ${!visible && "info-block__visible"} ${
+          !validate && "info-block__validate"
+        }`}
+      >
+        {`${validate ? "Спасибо за ваш ответ" : "Заполните все поля"}`}
+      </div>
       <form action="#" method="post" className="guest_form__body">
         <div className="guest_form__title">Ваши Имя и Фамилия</div>
         <div className="guest_form__item">
