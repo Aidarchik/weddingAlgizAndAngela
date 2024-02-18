@@ -15,7 +15,7 @@ export default function GuestForm() {
     setVisible(true);
     if (name !== "" && question !== "") {
       try {
-        const response = await fetch("/api/sendmail", {
+        await fetch("/api/sendmail", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
