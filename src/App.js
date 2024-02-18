@@ -24,7 +24,7 @@ function App() {
     return () => clearTimeout(interval);
   }, []);
   return (
-    <div className="App">
+    <div className="App wrapper">
       <Invite domReady={domReady} />
       <div className={`${!domReady && "hidden"}`}>
         <ContentWrapperRight>

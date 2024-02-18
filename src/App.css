@@ -12,9 +12,10 @@
   bottom: 0;
   z-index: -1;
   -webkit-overflow-scrolling: touch;
-  background-image: url('./assets/background.png');
+  background-image: url('./assets/algizandangela.png');
+  /* background-image: url('https://img.goodfon.ru/wallpaper/nbig/f/38/para-dvoe-vliublionnye-fotografiruiutsia-shapki-kurtki-sharf.jpg'); */
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 30% 20%;
   -webkit-background-size: cover;
   background-size: cover;
   min-height: 100%;
@@ -23,4 +24,8 @@
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
   transition: all 0.2s linear;
+}
+
+.wrapper{
+  background: rgba(256, 256, 256, 0.9);
 }
