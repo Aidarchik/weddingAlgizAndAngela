@@ -58,7 +58,8 @@ exports.handler = function (event, context, callback) {
   transporter.sendMail(
     {
       from: "aidar.mustaev@mail.ru",
-      to: "anzhela.aptukova@mail.ru",
+      // to: "anzhela.aptukova@mail.ru",
+      to: "ajdar.ru@mail.ru",
       subject: `Sending with React, Nodemailer and Netlify`,
       html: "<b>Hello world?</b>",
     },
