@@ -44,7 +44,8 @@
 const nodemailer = require("nodemailer");
 
 exports.handler = function (event, context, callback) {
-  let data = JSON.parse(event.body);
+  const data = JSON.parse(event.body);
+  const question = data.question === "yes" ? "Придем" : "Не придем";
 
   let transporter = nodemailer.createTransport({
     host: "smtp.mail.ru",
@@ -60,8 +61,8 @@ exports.handler = function (event, context, callback) {
       from: "aidar.mustaev@mail.ru",
       // to: "anzhela.aptukova@mail.ru",
       to: "ajdar.ru@mail.ru",
-      subject: `Sending with React, Nodemailer and Netlify`,
-      html: `<b>${data.name}</b><b>${data.question}</b>`,
+      subject: `Свадьба Альгиза и Анжелы`,
+      html: `<b>${data.name}</b><br /><b>${question}</b>`,
     },
     function (error, info) {
       if (error) {
