@@ -59,8 +59,7 @@ exports.handler = function (event, context, callback) {
   transporter.sendMail(
     {
       from: "aidar.mustaev@mail.ru",
-      // to: "anzhela.aptukova@mail.ru",
-      to: "ajdar.ru@mail.ru",
+      to: ["anzhela.aptukova@mail.ru", "ajdar.ru@mail.ru"],
       subject: `Свадьба Альгиза и Анжелы`,
       html: `<b>${data.name}</b><br /><b>${question}</b>`,
     },
