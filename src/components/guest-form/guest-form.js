@@ -4,18 +4,32 @@ import "./guest-form.css";
 
 export default function GuestForm() {
   const [name, setName] = useState("");
-  const [validate, setVaidate] = useState(false);
+  const [validate, setValidate] = useState(true);
   const [visible, setVisible] = useState(false);
   const [question, setQuestion] = useState("");
   const onChangeQuestion = (e) => {
     setQuestion(e.target.value);
   };
-  const onSendDataHendler = (event) => {
+  const onSendDataHendler = async (event) => {
     event.preventDefault();
     setVisible(true);
-    if (name !== "") setVaidate(true);
-    else setVaidate(false);
-    console.log(name, question);
+    if (name !== "" && question !== "") {
+      try {
+        const response = await fetch("/api/sendmail", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name,
+            question,
+          }),
+        });
+        setValidate(true);
+      } catch (error) {
+        console.log("Error:", error.message);
+      }
+    } else setValidate(false);
   };
   return (
     <div className="guest_form mx-auto max-w-full text-green-900 font-Cruinn italic">
@@ -36,16 +50,16 @@ export default function GuestForm() {
             name="name"
             id="formName"
             placeholder="Иван Иванов/Мария Ивановна"
-            className="guest_form__input"
+            className={`guest_form__input ${!validate && "validate"}`}
             onChange={(e) => {
               setName(e.target.value);
             }}
           />
         </div>
         <div className="guest_form__title">Ваше присутствие:</div>
-        <div className="guest_form__item">
+        <div className={`guest_form__item ${!validate && "validate"}`}>
           <div className="options">
-            <div className="options__item">
+            <div className="options__item ">
               <input
                 type="radio"
                 id="formYesQuestion"
