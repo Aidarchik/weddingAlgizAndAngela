@@ -44,7 +44,7 @@
 const nodemailer = require("nodemailer");
 
 exports.handler = function (event, context, callback) {
-  // let data = JSON.parse(event.body)
+  let data = JSON.parse(event.body);
 
   let transporter = nodemailer.createTransport({
     host: "smtp.mail.ru",
@@ -61,7 +61,7 @@ exports.handler = function (event, context, callback) {
       // to: "anzhela.aptukova@mail.ru",
       to: "ajdar.ru@mail.ru",
       subject: `Sending with React, Nodemailer and Netlify`,
-      html: "<b>Hello world?</b>",
+      html: `<b>${data}</b>`,
     },
     function (error, info) {
       if (error) {
