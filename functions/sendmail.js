@@ -61,7 +61,7 @@ exports.handler = function (event, context, callback) {
       // to: "anzhela.aptukova@mail.ru",
       to: "ajdar.ru@mail.ru",
       subject: `Sending with React, Nodemailer and Netlify`,
-      html: `<b>${data}</b>`,
+      html: `<b>${data.name}</b><b>${data.question}</b>`,
     },
     function (error, info) {
       if (error) {
