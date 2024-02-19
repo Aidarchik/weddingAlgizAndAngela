@@ -20,18 +20,18 @@ export default function PlanDay() {
         />
         <PlanDayItems
           image={furshet}
-          title="16:30 Фуршет"
+          title="16:10 Фуршет"
           desc="настраиваемся на веселую свадьбу."
         />
         <PlanDayItems
           image={ceremony}
-          title="17:00 Выездная церемония"
+          title="16:30 Выездная церемония"
           desc="немного радостных трогательных формальностей - то, ради чего
           собрались."
         />
         <PlanDayItems
           image={banket}
-          title="17:30 Начало банкета"
+          title="17:00 Начало банкета"
           desc="от души посмеёмся и сделаем этот вечер незабываемым вместе."
         />
       </div>

@@ -12,7 +12,7 @@ export default function Invite({ domReady }) {
   return (
     <div className="h-full min-h-screen mx-auto overflow-hidden relative">
       <div
-        className={`absolute z-10 top-0 left-0 bg-white w-full h-full trasition duration-[1000ms] ${
+        className={`invite-background absolute z-50 top-0 left-0 bg-white w-full h-full trasition duration-[3000ms] ${
           domReady ? "opacity-0" : "opacity-100"
         }`}
       ></div>

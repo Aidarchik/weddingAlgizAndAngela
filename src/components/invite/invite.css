@@ -1,3 +1,21 @@
 .algiz-black,.angela-black{
     @apply absolute left-0 top-0 z-50;
 }
+
+.invite-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-overflow-scrolling: touch;
+    background-image: url('../../assets/algizandangela.png');
+    /* background-image: url('https://img.goodfon.ru/wallpaper/nbig/f/38/para-dvoe-vliublionnye-fotografiruiutsia-shapki-kurtki-sharf.jpg'); */
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+    height: 100vh;
+    filter: grayscale(100%)
+}

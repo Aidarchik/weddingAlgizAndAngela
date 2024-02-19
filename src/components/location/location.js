@@ -16,7 +16,7 @@ export default function WeddingLocation() {
             zoom: 17,
             controls: ["zoomControl", "fullscreenControl"],
           }}
-          width="95vw"
+          width="90vw"
           height="45vh"
           instanceRef={(ref) => {
             ref && ref.behaviors.disable("scrollZoom");

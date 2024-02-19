@@ -34,7 +34,7 @@ export default function GuestForm() {
   return (
     <div className="guest_form mx-auto max-w-full text-green-900 font-Cruinn italic">
       <img src={guestFormImage} alt="" />
-      <label>Просьба дать свой ответ до 14.06.2023</label>
+      <label>Просьба дать свой ответ до 01.07.2024</label>
       <div
         className={`info-block ${!visible && "info-block__visible"} ${
           !validate && "info-block__validate"
