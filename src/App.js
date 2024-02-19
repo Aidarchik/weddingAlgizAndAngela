@@ -24,7 +24,7 @@ function App() {
   const [domReady, setDomReady] = useState(false);
 
   useEffect(() => {
-    const interval = setTimeout(() => setDomReady((prev) => !prev), 1000);
+    const interval = setTimeout(() => setDomReady((prev) => !prev), 2000);
     return () => clearTimeout(interval);
   }, []);
   return (

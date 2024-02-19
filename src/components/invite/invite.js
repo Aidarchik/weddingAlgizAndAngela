@@ -12,7 +12,7 @@ export default function Invite({ domReady }) {
   return (
     <div className="h-full min-h-screen mx-auto overflow-hidden relative">
       <div
-        className={`invite-background absolute z-50 top-0 left-0 bg-white w-full h-full trasition duration-[1000ms] ${
+        className={`invite-background absolute z-10 top-0 left-0 bg-white w-full h-full trasition duration-[2000ms] ${
           domReady ? "opacity-0" : "opacity-100"
         }`}
       ></div>
@@ -53,7 +53,7 @@ export default function Invite({ domReady }) {
               <div className="invite__item__image flex-grow-0 flex-shrink basis-auto lg:basis-[61%]">
                 <div className="names__row flex flex-col relative mx-[5%] my-[15%] lg:my-[2%]">
                   <div className="names__column flex">
-                    <div className="names__item flex-grow-0 flex-shrink-0 basis-[60%] mr-[40%] relative z-20">
+                    <div className="names__item flex-grow-0 flex-shrink-0 basis-[60%] mr-[40%] relative z-0">
                       <img src={algiz} alt="" className="algiz" />
                       <img
                         src={algizBlack}
@@ -65,7 +65,7 @@ export default function Invite({ domReady }) {
                     </div>
                   </div>
                   <div className="names__column flex">
-                    <div className="names__item flex-grow-0 flex-shrink-0 basis-[60%] ml-[40%] relative z-20">
+                    <div className="names__item flex-grow-0 flex-shrink-0 basis-[60%] ml-[40%] relative z-0">
                       <img src={angela} alt="" className="angela" />
                       <img
                         src={angelaBlack}
