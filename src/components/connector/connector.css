@@ -1,4 +1,4 @@
 .connector__image{
-    border-radius: 5%;
+    border-radius: 5px;
     filter: grayscale(100%);
 }
