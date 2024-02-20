@@ -19,6 +19,7 @@ import PlanDay from "./components/plan-day/plan-day";
 //------------Картинки для компонента Connector--------------------
 import con_1 from "./assets/connector_1.jpg";
 import con_2 from "./assets/connector_2.jpg";
+import Footer from "./components/footer/footer";
 
 function App() {
   const [domReady, setDomReady] = useState(false);
@@ -52,6 +53,7 @@ function App() {
         <ContentWrapperRight>
           <GuestForm />
         </ContentWrapperRight>
+        <Footer />
       </div>
     </div>
   );

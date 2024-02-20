@@ -2,7 +2,7 @@
     @apply absolute left-0 top-0 z-50;
 }
 
-.invite-background{
+.invite-init{
     position: fixed;
     top: 0;
     left: 0;
