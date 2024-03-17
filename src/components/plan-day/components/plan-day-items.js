@@ -6,7 +6,7 @@ export default function PlanDayItems({ image, title, desc }) {
     triggerOnce: true,
   });
   return (
-    <div ref={ref} className="plan-day__item">
+    <div ref={ref} className="plan-day__item font-lastochka">
       <div className="item__icon">
         <img src={image} alt="" />
       </div>

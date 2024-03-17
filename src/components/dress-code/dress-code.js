@@ -7,11 +7,15 @@ export default function DressCode() {
       <div className="dg__row flex flex-col items-center">
         <div className="dg__column lg:mb-10">
           <div className="dg__item">
-            <img src={dressCode} alt="" className="max-w-[50%] mx-auto" />
+            <img
+              src={dressCode}
+              alt=""
+              className="dg_title max-w-[50%] mx-auto"
+            />
           </div>
         </div>
         <div className="dg__column sm:w-[350px] lg:w-[450px] mb-5 lg:mb-10">
-          <div className="dg__item text-green-900  lg:text-xl italic font-Cruinn">
+          <div className="dg__item  lg:text-xl italic font-Cruinn">
             <p>
               Мы будем рады, если своими нарядами вы поддержите цветовую гамму
               дня
@@ -23,7 +27,7 @@ export default function DressCode() {
             <img
               src={dressCodeColors}
               alt=""
-              className="mx-auto bg-white rounded-full bg-opacity-100"
+              className="mx-auto  bg-white rounded-full bg-opacity-100"
             />
           </div>
         </div>

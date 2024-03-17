@@ -8,9 +8,9 @@ import PlanDayItems from "./components/plan-day-items";
 
 export default function PlanDay() {
   return (
-    <div className="plan-day container text-green-900 font-Cruinn italic  w-[450px] max-w-[80%] mb-10 flex flex-col items-center mx-auto">
+    <div className="plan-day container  w-[450px] max-w-[80%] mb-10 flex flex-col items-center mx-auto">
       <div className="plan-day__title">
-        <img src={planDayTitle} alt="" className="mb-[20px]" />
+        <img src={planDayTitle} alt="" className="dg_title mb-[20px]" />
       </div>
       <div className="plan-day__body">
         <PlanDayItems

@@ -1,13 +1,13 @@
 import weddingDate from "../../assets/wedding_date.png";
 import Calendar from "./calendar/calendar";
-import Timer from "./timer/timer";
+// import Timer from "./timer/timer";
 
 export default function WeddingDate() {
   return (
     <div className=" w-[450px] max-w-[80%] mx-auto text-green-900 italic flex flex-col items-center">
-      <img src={weddingDate} alt="" className="" />
+      {/* <img src={weddingDate} alt="" className="" /> */}
       <Calendar />
-      <Timer />
+      {/* <Timer /> */}
     </div>
   );
 }

@@ -13,6 +13,7 @@ module.exports = {
         lastochka: ["lastochka"],
         Czizh: ["Czizh"],
         Cruinn: ["Cruinn"],
+        Classic_one: ["Classic_one"],
       },
     },
   },

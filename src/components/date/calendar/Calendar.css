@@ -59,10 +59,10 @@ header .current-date {
   margin-top: 30px;
 }
 .calendar .weekend {
-  @apply text-red-600;
+  /* @apply text-red-600; */
 }
 .days li.inactive {
-  @apply text-gray-300;
+  @apply opacity-0;
 }
 .days li.active {
 }
@@ -90,4 +90,10 @@ header .current-date {
   .calendar {
     padding: 15px 18px;
   }
+}
+
+.heart{
+  /* filter: invert(180); */
+  /* filter: grayscale(80%); */
+  /* filter: brightness(30%); */
 }

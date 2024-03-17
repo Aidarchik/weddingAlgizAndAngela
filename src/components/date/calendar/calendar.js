@@ -10,7 +10,7 @@ export default function Calendar() {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="calendar_wrapper">
+    <div className="calendar_wrapper text_color">
       <header className="calendar__header">
         <p className="current-date">Август 2024</p>
       </header>
@@ -34,7 +34,7 @@ export default function Calendar() {
             <img
               src={heartImage}
               alt=""
-              className={`absolute hue-rotate-30 invert top-[-20%] transition duration-1000 ${
+              className={`absolute hue-rotate-30 heart top-[-35%] transition duration-1000 ${
                 toggleScale ? "scale-150" : "scale-100"
               }`}
             />
