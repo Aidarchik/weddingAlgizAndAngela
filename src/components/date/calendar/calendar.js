@@ -12,19 +12,19 @@ export default function Calendar() {
   return (
     <div className="calendar_wrapper text_color">
       <header className="calendar__header">
-        <p className="current-date">Август 2024</p>
+        <div className="section_title">Август 2024</div>
       </header>
       <div className="calendar">
         <ul className="weeks">
-          <li>ПН</li>
-          <li>ВТ</li>
-          <li>СР</li>
-          <li>ЧТ</li>
-          <li>ПТ</li>
-          <li className="weekend">СБ</li>
-          <li className="weekend">ВС</li>
+          <li>Пн</li>
+          <li>Вт</li>
+          <li>Ср</li>
+          <li>Чт</li>
+          <li>Пт</li>
+          <li className="weekend">Сб</li>
+          <li className="weekend">Вс</li>
         </ul>
-        <ul className="days">
+        <ul className="days number">
           <li className="inactive">29</li>
           <li className="inactive">30</li>
           <li className="inactive">31</li>
@@ -34,7 +34,7 @@ export default function Calendar() {
             <img
               src={heartImage}
               alt=""
-              className={`absolute hue-rotate-30 heart top-[-35%] transition duration-1000 ${
+              className={`absolute hue-rotate-30 heart top-[-20%] transition duration-1000 ${
                 toggleScale ? "scale-150" : "scale-100"
               }`}
             />

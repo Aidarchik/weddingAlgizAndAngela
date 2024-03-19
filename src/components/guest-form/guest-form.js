@@ -1,5 +1,4 @@
 import { useState } from "react";
-import guestFormImage from "../../assets/Guest_form.png";
 import "./guest-form.css";
 
 export default function GuestForm() {
@@ -32,9 +31,11 @@ export default function GuestForm() {
     } else setValidate(false);
   };
   return (
-    <div className="guest_form mx-auto max-w-full text-green-900 font-Cruinn italic">
-      <img src={guestFormImage} alt="" />
-      <label>Просьба дать свой ответ до 01.07.2024</label>
+    <div className="guest_form mx-auto section_width relative z-10">
+      <div className="section_title">Анкета гостя</div>
+      <label>
+        Просьба дать свой ответ до <span className="number">01.07.2024</span>
+      </label>
       <div
         className={`info-block ${!visible && "info-block__visible"} ${
           !validate && "info-block__validate"

@@ -22,60 +22,54 @@ export default function Timer() {
   }, []);
   return (
     <div className="font-lastochka">
-      <h1 className="text-2xl sm:text-2xl">До свадьбы осталось</h1>
+      <h1 className="text-4xl">До свадьбы осталось</h1>
       <div className="timer">
         <div className="timer__row flex item-center justify-center">
-          <div className="timer__column p-1 sm:p-2">
+          <div className="timer__column p-1">
             <div className="timer__item">
-              <div className="item__number italic font-Cruinn sm:text-2xl">
+              <div className="item__number italic font-Cruinn text-xl">
                 {count.days}
               </div>
-              <h3 className="item__name text-xs sm:text-sm">дней</h3>
+              <h3 className="item__name text-3xl">дней</h3>
             </div>
           </div>
-          <div className="timer__column p-1 sm:p-2">
+          <div className="timer__column p-1">
             <div className="timer__item">
-              <div className="item__number italic font-Cruinn sm:text-2xl">
-                :
-              </div>
+              <div className="item__number italic font-Cruinn text-xl">:</div>
             </div>
           </div>
-          <div className="timer__column p-1 sm:p-2">
+          <div className="timer__column p-1">
             <div className="timer__item">
-              <div className="item__number italic font-Cruinn sm:text-2xl">
+              <div className="item__number italic font-Cruinn text-xl">
                 {count.hours}
               </div>
-              <h3 className="item__name text-xs sm:text-sm">часов</h3>
+              <h3 className="item__name text-3xl">часов</h3>
             </div>
           </div>
-          <div className="timer__column p-1 sm:p-2">
+          <div className="timer__column p-1">
             <div className="timer__item">
-              <div className="item__number italic font-Cruinn sm:text-2xl">
-                :
-              </div>
+              <div className="item__number italic font-Cruinn text-xl">:</div>
             </div>
           </div>
-          <div className="timer__column p-1 sm:p-2">
+          <div className="timer__column p-1">
             <div className="timer__item">
-              <div className="item__number italic font-Cruinn sm:text-2xl">
+              <div className="item__number italic font-Cruinn text-xl">
                 {count.minutes}
               </div>
-              <h3 className="item__name text-xs sm:text-sm">минут</h3>
+              <h3 className="item__name text-3xl">минут</h3>
             </div>
           </div>
-          <div className="timer__column p-1 sm:p-2">
+          <div className="timer__column p-1">
             <div className="timer__item">
-              <div className="item__number italic font-Cruinn sm:text-2xl">
-                :
-              </div>
+              <div className="item__number italic font-Cruinn text-xl">:</div>
             </div>
           </div>
-          <div className="timer__column p-1 sm:p-2">
+          <div className="timer__column p-1">
             <div className="timer__item">
-              <div className="item__number italic font-Cruinn sm:text-2xl">
+              <div className="item__number italic font-Cruinn text-xl">
                 {count.seconds}
               </div>
-              <h3 className="item__name text-xs sm:text-sm">секунд</h3>
+              <h3 className="item__name text-3xl">секунд</h3>
             </div>
           </div>
         </div>

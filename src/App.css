@@ -32,17 +32,22 @@
   width: 90%;
   margin: 10px auto;
   border-radius: 15px;
+  @apply font-lastochka text-3xl
 }
 
-.dg_title{
-  filter: grayscale(90%);
-  filter: brightness(50%);
+.section_title{
+  @apply text-5xl mb-4;
 }
 
 .section_width{
-  @apply max-w-[80%];
+  @apply max-w-[80%] mb-20;
+
 }
 
 .text_color{
-  @apply text-neutral-600;
+  @apply text-neutral-900;
+}
+
+.number{
+  @apply font-Czizh text-xl;
 }

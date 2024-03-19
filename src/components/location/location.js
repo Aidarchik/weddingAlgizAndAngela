@@ -1,13 +1,13 @@
-import locationImage from "../../assets/location.png";
 import { Map, Placemark, TypeSelector, YMaps } from "@pbe/react-yandex-maps";
 
 export default function WeddingLocation() {
   return (
     <div className="mx-auto w-[450px] max-w-[80%] mb-10 flex flex-col items-center font-lastochka relative z-10">
-      <img src={locationImage} alt="" className="dg_title mb-[20px]" />
-      <h1 className="text-5xl ">Кафе «Диана»</h1>
-      <p className="mb-2 text-2xl">
-        улица Бичуринский Тракт, 28Е, село Барда, Пермский край
+      <div className="section_title">Место проведения</div>
+      <h1 className="text-4xl mb-4">Кафе «Диана»</h1>
+      <p className="mb-10">
+        улица Бичуринский Тракт, <span className="number">28</span>Е, село
+        Барда, Пермский край
       </p>
       <YMaps>
         <Map

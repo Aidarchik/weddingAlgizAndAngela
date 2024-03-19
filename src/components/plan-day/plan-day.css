@@ -4,10 +4,11 @@
 .plan-day__title {
 }
 .plan-day__body {
+    margin-top: 40px;
     min-width: 100%;
 }
 .plan-day__item {
-    --marginbottom: 70px;
+    --marginbottom: 250px;
     margin-bottom: var(--marginbottom);
     position: relative;
 }
@@ -42,12 +43,18 @@
 }
 .item__content {
     position: absolute;
-    top: 50%;
+    top: 110%;
     right: 0;
-    width: 60%;
-    /* transform: translateY(-50%);  */
-    @apply mb-2 text-sm md:text-lg;
+    width: 70%;
+    @apply mb-2 text-xl;
 }
+.plan-day__body>.plan-day__item:first-child>.item__content{
+    top: 80%;
+}
+
 .content__title {
-    @apply text-base md:text-2xl font-semibold;
+    @apply text-3xl;
+}
+.content__desc{
+    @apply text-2xl
 }

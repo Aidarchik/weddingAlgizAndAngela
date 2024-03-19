@@ -2,11 +2,6 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Invite from "./components/invite/invite";
 // import DearGuests from "./components/dear-guests/dear-guests";
-import {
-  ContentWrapperLeft,
-  // ContentWrapperLeft,
-  ContentWrapperRight,
-} from "./components/content-wrapper/content-wrapper";
 import DearGuests from "./components/dear-guests/dear-guests";
 import Date from "./components/date/wedding-date";
 import Connector from "./components/connector/connector";
@@ -17,7 +12,6 @@ import Details from "./components/detail/detail";
 import PlanDay from "./components/plan-day/plan-day";
 //-----------------------------------------------------------------
 //------------Картинки для компонента Connector--------------------
-import con_1 from "./assets/connector_1.jpg";
 import con_2 from "./assets/connector_2.jpg";
 import con_3 from "./assets/connector_3.jpg";
 import con_4 from "./assets/connector_4.jpg";
@@ -37,7 +31,6 @@ function App() {
       <Invite domReady={domReady} />
       <div className={`${!domReady && "hidden"}`}>
         <DearGuests />
-        {/* <Connector image={con_1} /> */}
         <Date />
         <Connector image={con_3} />
         <DressCode />
