@@ -3,6 +3,7 @@ import "./guest-form.css";
 
 export default function GuestForm() {
   const [name, setName] = useState("");
+  const [load, setLoad] = useState(false);
   const [validate, setValidate] = useState(true);
   const [visible, setVisible] = useState(false);
   const [question, setQuestion] = useState("");
@@ -12,6 +13,7 @@ export default function GuestForm() {
   const onSendDataHendler = async (event) => {
     event.preventDefault();
     setVisible(true);
+    setLoad(true);
     if (name !== "" && question !== "") {
       try {
         await fetch("/api/sendmail", {
@@ -29,6 +31,7 @@ export default function GuestForm() {
         console.log("Error:", error.message);
       }
     } else setValidate(false);
+    setLoad(false);
   };
   return (
     <div className="guest_form mx-auto section_width relative z-10">
@@ -85,6 +88,18 @@ export default function GuestForm() {
             </div>
           </div>
         </div>
+        <button
+          type="submit"
+          onClick={onSendDataHendler}
+          className="guest_form__button"
+          disabled={load}
+        >
+          {load
+            ? "Отправка..."
+            : validate && visible
+            ? "Отправлено"
+            : "Отправить"}
+        </button>
         <div
           className={`info-block ${!visible && "info-block__visible"} ${
             !validate && "info-block__validate"
@@ -92,13 +107,6 @@ export default function GuestForm() {
         >
           {`${validate ? "Спасибо за ваш ответ" : "Заполните все поля"}`}
         </div>
-        <button
-          type="submit"
-          onClick={onSendDataHendler}
-          className="guest_form__button"
-        >
-          Отправить
-        </button>
       </form>
     </div>
   );
