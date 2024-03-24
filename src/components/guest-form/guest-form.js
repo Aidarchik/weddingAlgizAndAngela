@@ -36,13 +36,6 @@ export default function GuestForm() {
       <label>
         Просьба дать свой ответ до <span className="number">01.07.2024</span>
       </label>
-      <div
-        className={`info-block ${!visible && "info-block__visible"} ${
-          !validate && "info-block__validate"
-        }`}
-      >
-        {`${validate ? "Спасибо за ваш ответ" : "Заполните все поля"}`}
-      </div>
       <form action="#" method="post" className="guest_form__body">
         <div className="guest_form__title">Ваши Имя и Фамилия</div>
         <div className="guest_form__item">
@@ -91,6 +84,13 @@ export default function GuestForm() {
               </label>
             </div>
           </div>
+        </div>
+        <div
+          className={`info-block ${!visible && "info-block__visible"} ${
+            !validate && "info-block__validate"
+          }`}
+        >
+          {`${validate ? "Спасибо за ваш ответ" : "Заполните все поля"}`}
         </div>
         <button
           type="submit"
