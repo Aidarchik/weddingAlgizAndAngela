@@ -4,7 +4,7 @@ export default function DearGuests() {
       <div className="dg__row flex flex-col items-center">
         <div className="dg__column">
           <div className="dg__item">
-            <div className="section_title">Дорогие гости</div>
+            <div className="section_title">Дорогие гости!</div>
           </div>
         </div>
         <div className="dg__column">
@@ -17,9 +17,9 @@ export default function DearGuests() {
             <p> Мы решили пожениться!</p>
             <p>
               В этот особенный день мы хотим оказаться в окружении самых любимых
-              и дорогих для нас людей. С большим удовольствием приглашаем вас на
-              нашу свадьбу!
+              и дорогих для нас людей.
             </p>
+            <p>С большим удовольствием приглашаем вас на нашу свадьбу!</p>
           </div>
         </div>
       </div>

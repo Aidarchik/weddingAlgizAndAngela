@@ -44,7 +44,7 @@ export default function Invite({ domReady }) {
             </div>
           </div>
         </div>
-        <div className="invite__column">
+        <div className="invite__column mt-20">
           <Timer />
         </div>
       </div>

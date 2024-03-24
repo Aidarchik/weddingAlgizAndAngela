@@ -12,8 +12,7 @@
   bottom: 0;
   z-index: -1;
   -webkit-overflow-scrolling: touch;
-  background-image: url('./assets/algizandangela.jpg');
-  /* background-image: url('https://img.goodfon.ru/wallpaper/nbig/f/38/para-dvoe-vliublionnye-fotografiruiutsia-shapki-kurtki-sharf.jpg'); */
+  background-image: url("https://i.postimg.cc/WzgPmx5p/algizandangela.jpg");
   background-repeat: no-repeat;
   background-position: 50% 20%;
   -webkit-background-size: cover;
@@ -32,7 +31,7 @@
   width: 90%;
   margin: 10px auto;
   border-radius: 15px;
-  @apply font-lastochka text-3xl
+  @apply font-lastochka text-3xl;
 }
 
 .section_title{
